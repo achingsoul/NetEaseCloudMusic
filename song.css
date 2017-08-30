@@ -16,11 +16,24 @@
     flex-direction: column;
     height: 100vh;
     background: transparent url(http://p3.music.126.net/wbOIJb74smEG5SStLfUvmQ==/18271684230939848.jpg) no-repeat center;
+    background-position: 50%;
+    background-size: auto 100%;
     background-size: cover;
+    opacity: 1;
+}
+.page::after{
+    content: " ";
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 }
 
 .disc-container{
     position: relative;
+    z-index: 1;
 }
 .disc-container .pointer{
     width: 24vw;
@@ -34,40 +47,64 @@
     margin-top: 18vw;
 }
 .disc-container .ring{
-    width: 72vw;
+    width: 80vw;
 }
 .disc-container .light{
-    width: 72vw;
+    width: 80vw;
     position: absolute;
-    animation: circle 18s infinite linear;
 }
 .disc-container .cover{
-    width: 44.5vw;
+    width: 50vw;
     position: absolute;
     border-radius: 50%;
+}
+.disc-container.playing .light,
+.disc-container.playing .cover{
     animation: circle 18s infinite linear;
 }
 
 .song-description{
+    flex-grow: 1;
     color: #AEABAC;
     text-align: center;
     line-height: 2;
     margin-top: 20px;
+    z-index: 1;
 }
 .song-description h1{
     color: white;
     font-size: 18px;
 }
 .song-description p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
 }
 .song-description .lyric{
     height: 72px;
-    border: 1px solid red;
+    overflow: hidden;
 }
 .song-description p.active{
     
 }
 .page > .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.page > .links > a{
+    width: 38.5vw;
+    margin: 1em;
+    text-align: center;
+    border: 1px solid #D43B32;
+    background: transparent;
+    color: #D43B32;
+    text-decoration: none;
+    padding: 1.5vw;
+    border-radius: 1.2vw;
+    letter-spacing: 1vw;
+}
+.page > .links > a.main{
+    background: #D43B32;
+    color: #FFFFFF;
 }

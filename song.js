@@ -14,7 +14,14 @@ $(function(){
             if(!object){return}
             let $p = $('<p/>')
             $p.attr('data-time',object.time).text(object.words)
-            $p.appendTo($lyric)
+            $p.appendTo($lyric.children('.lines'))
         })
     })
+
+    let audio = document.createElement('audio')
+    audio.src = 'http://osb6hhg60.bkt.clouddn.com/%E6%96%AF%E5%BE%B7%E5%93%A5%E5%B0%94%E6%91%A9%E6%83%85%E4%BA%BA-%E9%99%88%E5%A5%95%E8%BF%85.m4a'
+    audio.oncanplay = function(){
+        audio.play()
+    }
+    $('.disc-container').addClass('playing') // 音乐播放时转动碟片
 })
