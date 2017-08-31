@@ -1,0 +1,34 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+*::before, *::after{box-sizing: border-box;}
+
+body{
+    font-size: 3.7vw;
+}
+.topbar{
+    background: #D43C33;
+    padding: 4.5vw 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar .topsvg{
+    width: 38vw;
+}
+.topbar .downloadApp{
+    color: white;
+    text-decoration: none;
+    line-height: 7.5vw;
+    border: 1px solid white;
+    border-radius: 4.2vw;
+    display: block;
+    font-size: 1.1em;
+    padding: 0 10px;
+}
+
+.siteNav{}
+
+.playlists{}
+
+.latestMusic{}
+
+section.art{}
