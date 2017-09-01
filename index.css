@@ -1,5 +1,6 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 *::before, *::after{box-sizing: border-box;}
+ul,ol{list-style: none;}
 
 body{
     font-size: 3.7vw;
@@ -26,6 +27,33 @@ body{
 }
 
 .siteNav{}
+.siteNav > ol{
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #CCC;
+    font-size: 1.1em;
+}
+.siteNav > ol> li{
+    flex: 1;
+}
+.siteNav > ol> li.active{
+    color: #D33A31;
+}
+.siteNav > ol> li> span{
+    position: relative;
+    height: 10vw;
+    line-height: 11vw;
+    display: inline-block;
+}
+.siteNav > ol> li.active> span::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #D33A31;
+}
+
 
 .playlists{}
 
