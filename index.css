@@ -1,6 +1,9 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 *::before, *::after{box-sizing: border-box;}
 ul,ol{list-style: none;}
+h1,h2,h3{
+    font-weight: normal;
+}
 
 body{
     font-size: 3.7vw;
@@ -9,7 +12,7 @@ body{
 section > h2:first-child{
     font-size: 4.5vw;
     border-left: 2px solid #D33A31;
-    margin: 14px 0;
+    margin: 4vw 0;
     font-weight: normal;
     line-height: 1;
     padding-left: 2.2vw;
@@ -93,5 +96,70 @@ section > h2:first-child{
 }
 
 .latestMusic{}
+.latestMusic > ol{
+    padding-left: calc(2.2vw + 2px);
+}
+.latestMusic > ol> li{
+    padding: 1.5vw 0;
+    border-bottom: 1px solid #E2E2E3;
+    position: relative;
+}
+.latestMusic > ol> li h3{
+    font-size: 4.5vw;
+}
+.latestMusic > ol> li p{
+    font-size: 3.2vw;
+    color: #888;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+.latestMusic > ol> li svg.play{
+    height: 5.9vw;
+    width: 5.9vw;
+    position: absolute;
+    right: 3vw;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #AAA;
+}
+.latestMusic > ol> li svg.sq{
+    width: 3.6vw;
+    height: 3.6vw;
+    margin-right: 0.3em;
+    fill: #FE672E;
+}
 
-section.art{}
+section.art{
+    background: transparent url(http://s3.music.126.net/m/s/img/recommand_bg_2x.png?d045fafc60e017b653f8065a87496922) no-repeat center 0;
+    background-size: contain;
+    padding-top: 17.6vw;
+    padding-bottom: 5vw;
+}
+section.art .logo{
+    text-align: center;
+}
+section.art .logosvg{
+    width: 61.7vw;
+}
+section.art .openApp{
+    display: block;
+    max-width: 81.3vw;
+    padding: 1vw 0;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: #D43C33;
+    border: 1px solid;
+    font-size: 4.3vw;
+    line-height: 8.6vw;
+    border-radius: 5.6vw;
+    margin-bottom: 1.5vw;
+    margin-top: 2.5vw;
+}
+section.art .copyright{
+    font-size: 3.2vw;
+    transform: scale(.75);
+    text-align: center;
+    color: #888;
+}
