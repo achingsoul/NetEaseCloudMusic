@@ -32,7 +32,7 @@ section > h2:first-child{
     color: white;
     text-decoration: none;
     line-height: 7.5vw;
-    border: 1px solid white;
+    border: 0.5px solid white;
     border-radius: 4.2vw;
     display: block;
     font-size: 1.1em;
@@ -70,6 +70,7 @@ section > h2:first-child{
 
 .playlists{
     margin-top: 5.2vw;
+    padding-bottom: 6.2vw;
 }
 .playlists > ul{
     display: flex;
@@ -103,6 +104,10 @@ section > h2:first-child{
     padding: 1.5vw 0;
     border-bottom: 1px solid #E2E2E3;
     position: relative;
+}
+.latestMusic > ol> li a{
+    text-decoration: none;
+    color: inherit;
 }
 .latestMusic > ol> li h3{
     font-size: 4.5vw;
