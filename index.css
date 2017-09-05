@@ -97,6 +97,9 @@ section > h2:first-child{
 }
 
 .latestMusic{}
+.latestMusic > p{
+    text-align: center;
+}
 .latestMusic > ol{
     padding-left: calc(2.2vw + 2px);
 }
