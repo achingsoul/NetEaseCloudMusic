@@ -73,10 +73,12 @@
     width: 50vw;
     position: absolute;
     border-radius: 50%;
+    animation: circle 18s infinite linear;
+    animation-play-state: paused;
 }
 .disc-container.playing .light,
 .disc-container.playing .cover{
-    animation: circle 18s infinite linear;
+    animation-play-state: running;
 }
 .disc-container .icon-pause,
 .disc-container.playing .icon-play{
@@ -97,6 +99,7 @@
 .song-description h1{
     color: white;
     font-size: 18px;
+    font-weight: normal;
 }
 .song-description p{
     font-size: 16px;
