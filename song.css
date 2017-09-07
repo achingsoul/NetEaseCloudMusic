@@ -35,6 +35,13 @@
     position: relative;
     z-index: 1;
 }
+.disc-container .disc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18vw;
+    position: relative;
+}
 .disc-container .icon{
     width: 8vw;
     fill: #FFFFFF;
@@ -46,21 +53,19 @@
     justify-content: center;
     align-items: center;
     border: 1px solid white;
-    width: 16%;
-    height: 16%;
+    width: 16vw;
+    height: 16vw;
     border-radius: 50%;
     background: rgba(0,0,0,.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
 }
 .disc-container .pointer{
     width: 24vw;
     position: absolute;
     left: 45vw;
-}
-.disc-container .disc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 18vw;
 }
 .disc-container .ring{
     width: 80vw;
