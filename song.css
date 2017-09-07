@@ -17,14 +17,12 @@
     height: 100vh;
     background: transparent url(http://p3.music.126.net/wbOIJb74smEG5SStLfUvmQ==/18271684230939848.jpg) no-repeat center;
     background-position: 50%;
-    background-size: auto 100%;
     background-size: cover;
     opacity: 1;
 }
 .page::after{
     content: " ";
     background-color: rgba(0,0,0,.5);
-    background-size: cover;
     position: absolute;
     left: 0;
     right: 0;
@@ -106,7 +104,7 @@
     flex-grow: 1;
     color: #AEABAC;
     text-align: center;
-    line-height: 2;
+    line-height: 1.1;
     margin-top: 20px;
     z-index: 1;
 }
@@ -118,13 +116,15 @@
 .song-description p{
     font-size: 16px;
     line-height: 24px;
+    line-height: 2;
 }
 .song-description .lines{
     transition: transform 0.3s;
 }
 .song-description .lyric{
-    height: 72px;
+    height: 88px;
     overflow: hidden;
+    margin-top: 14px;
 }
 .song-description p.active{
     color: white;
