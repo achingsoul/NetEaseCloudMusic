@@ -67,6 +67,12 @@ section > h2:first-child{
     border-top: 2px solid #D33A31;
 }
 
+.tabContent > li{
+    display: none;
+}
+.tabContent > li.active{
+    display: block;
+}
 
 .playlists{
     margin-top: 5.2vw;
