@@ -88,6 +88,8 @@
     border: 1px red solid;
     left: 50%;
     margin-left: -95px;
+    top: 50%;
+    margin-top: -95px;
 }
 .disc-container.playing .light,
 .disc-container.playing .cover{
