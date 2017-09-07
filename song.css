@@ -66,6 +66,7 @@
     width: 24vw;
     position: absolute;
     left: 45vw;
+    z-index: 1;
 }
 .disc-container .ring{
     width: 80vw;
@@ -73,6 +74,7 @@
 .disc-container .light{
     width: 80vw;
     position: absolute;
+    border: 1px solid blue;
 }
 .disc-container .cover{
     width: 50vw;
@@ -80,6 +82,7 @@
     border-radius: 50%;
     animation: circle 18s infinite linear;
     animation-play-state: paused;
+    border: 1px red solid;
 }
 .disc-container.playing .light,
 .disc-container.playing .cover{
