@@ -77,7 +77,8 @@
     transform: translate(-50%,-50%);
 }
 .disc-container .cover{
-    /*width: 50vw;*/
+    width: 50vw;
+    height: 50vw;
     position: absolute;
     
     animation: circle 18s infinite linear;
@@ -89,11 +90,12 @@
 }
 .disc-container .cover img{
     vertical-align: middle;
-    width: 50vw;
+    width: 100%;
     border-radius: 50%;
     position: absolute;
     transform: translateX(-50%) translateY(-50%);
     left: 50%; 
+    top: 50%;
 }
 .disc-container.playing .light,
 .disc-container.playing .cover{
