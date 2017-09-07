@@ -59,7 +59,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    position: absolute;
 }
 .disc-container .pointer{
     width: 24vw;
@@ -74,19 +73,27 @@
     width: 80vw;
     position: absolute;
     top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .disc-container .cover{
-    width: 50vw;
+    /*width: 50vw;*/
     position: absolute;
-    border-radius: 50%;
+    
     animation: circle 18s infinite linear;
     animation-play-state: paused;
-    left: 50%;
-    margin-left: -95px;
+    /*left: 50%;
     top: 50%;
-    margin-top: -95px;
+    transform: translateX(-50%) translateY(-50%);
+    margin: auto;*/
+}
+.disc-container .cover img{
+    vertical-align: middle;
+    width: 50vw;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%; 
 }
 .disc-container.playing .light,
 .disc-container.playing .cover{
