@@ -21,8 +21,10 @@ $(function () {
         })
         $('#latestMusicLoading').remove()
     }, function () {
-
     })
+
+
+
 
     $('.siteNav').on('click', 'ol.tabItems>li', function (e) {
         let $li = $(e.currentTarget).addClass('active')
@@ -37,12 +39,7 @@ $(function () {
         if ($li.attr('data-downloaded') === 'yes') {
             return
         }
-        if (index === 1) {
-            $.get('./page2.json').then((response) => {
-                $li.text(response.content)
-                $li.attr('data-downloaded', 'yes')
-            })
-        } else if (index === 2) {
+         else if (index === 2) {
             return
             $.get('./page3.json').then((response) => {
                 $li.text(response.content)

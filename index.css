@@ -177,3 +177,42 @@ section.art .copyright{
     text-align: center;
     color: #888;
 }
+
+section.hotlist{
+    position: relative;
+}
+section.hotlist .hotlistWrapper{
+    background: url(//s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252…) no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 36vw;
+}
+section.hotlist .hotlistBanner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 6.67vw 5.33vw;
+}
+section.hotlist .hotlistLogo{
+    background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28…) no-repeat;
+    background-size: 166px 97px;
+    width: 142px;
+    height: 67px;
+    background-position: -24px -30px;
+}
+section.hotlist .updateTime{
+    color: hsla(0, 0%, 100%, .8);
+    margin-top: 10px;
+    font-size: 12px;
+}
+section.hotlist .dimmer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    top: 0;
+    left: 0;
+}
+.hottestMusic{}
+.hottestMusic > p{}

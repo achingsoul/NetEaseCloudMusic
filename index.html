@@ -64,7 +64,9 @@
         </ol>
     </nav>
     <ol class="tabContent">
+        <!--推荐音乐-->
         <li class="active">
+            <!--推荐歌单-->
             <section class="playlists">
                 <h2>推荐歌单</h2>
                 <ul>
@@ -100,6 +102,7 @@
                     </li>
                 </ul>
             </section>
+            <!--最新音乐-->
             <section class="latestMusic">
                 <h2>最新音乐</h2>
                 <p id="latestMusicLoading">
@@ -107,6 +110,7 @@
                 </p>
                 <ol id="latestMusic"></ol>
             </section>
+            <!--广告-->
             <section class="art">
                 <div class="logo">
                     <svg class="logosvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 88" data-reactid="89">
@@ -167,13 +171,26 @@
             </section>
         </li>
         <li>
-            <p id="tab2Loading">
-                <img src="./images/loading.gif" alt="">
-            </p>
+            <!--热歌榜-->
+            <section class="hotlist">
+                <div class="hotlistWrapper">
+                    <div class="hotlistBanner">
+                        <div class="hotlistLogo"></div>
+                        <div class="updateTime">更新日期：09月05日</div>
+                    </div>
+                    <div class="dimmer"></div>
+                </div>
+            </section>
+            <section class="hottestMusic">
+                <p id="hottestMusicLoading">
+                    <img src="./images/loading.gif" alt="">
+                </p>
+                <a class="showAll" href="#">查看完整榜单 ></a>
+            </section>
         </li>
         <li>
             <input id="searchSong" type="text" style="border: 1px solid red;">
-            <div id="output"></div> 
+            <div id="output"></div>
         </li>
     </ol>
 
