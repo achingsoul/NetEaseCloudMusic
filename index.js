@@ -23,7 +23,29 @@ $(function () {
     }, function () {
     })
 
+    $.get('./hotsongs.json').then(function (response) {
+        let items = response
+        items.forEach((i) => {
+            let $li = $(`<li>
+            <div class="rank">${i.id}</div>
+                <a href="./song.html?id=${i.id}">
+                    <h3>${i.name}</h3>
+                    <p>
+                        <svg class="sq">
+                            <use xlink:href="#icon-sq"></use>
+                        </svg>
+                        ${i.singer}-${i.album}</p>
+                    <svg class="play">
+                        <use xlink:href="#icon-play-circled"></use>
+                    </svg>
+                </a>
+            </li>`)
+            $('#hottestSong').append($li)
+        })
+        $('#hottestMusicLoading').remove()
+    })
 
+    
 
 
     $('.siteNav').on('click', 'ol.tabItems>li', function (e) {
@@ -39,7 +61,7 @@ $(function () {
         if ($li.attr('data-downloaded') === 'yes') {
             return
         }
-         else if (index === 2) {
+        else if (index === 2) {
             return
             $.get('./page3.json').then((response) => {
                 $li.text(response.content)
@@ -54,10 +76,10 @@ $(function () {
         let value = $input.val().trim()
         if (value === '') { return }
 
-        if(timer){
+        if (timer) {
             clearTimeout(timer)
         }
-        
+
         timer = setTimeout(function () {
             search(value).then((result) => {
                 timer = undefined

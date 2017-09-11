@@ -7,6 +7,7 @@ h1,h2,h3{
 
 body{
     font-size: 3.7vw;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
 
 section > h2:first-child{
@@ -110,7 +111,7 @@ section > h2:first-child{
     padding-left: calc(2.2vw + 2px);
 }
 .latestMusic > ol> li{
-    padding: 1.5vw 0;
+    padding: 1.8vw 0;
     border-bottom: 1px solid #E2E2E3;
     position: relative;
 }
@@ -124,7 +125,7 @@ section > h2:first-child{
 .latestMusic > ol> li p{
     font-size: 3.2vw;
     color: #888;
-    line-height: 1;
+    line-height: 1.5;
     display: flex;
     align-items: center;
 }
@@ -186,6 +187,7 @@ section.hotlist .hotlistWrapper{
     background-size: cover;
     position: relative;
     padding-top: 36vw;
+    padding-bottom: 2.6vw;
 }
 section.hotlist .hotlistBanner{
     position: absolute;
@@ -204,7 +206,7 @@ section.hotlist .hotlistLogo{
 section.hotlist .updateTime{
     color: hsla(0, 0%, 100%, .8);
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 11px;
 }
 section.hotlist .dimmer{
     width: 100%;
@@ -214,5 +216,70 @@ section.hotlist .dimmer{
     top: 0;
     left: 0;
 }
-.hottestMusic{}
-.hottestMusic > p{}
+
+.hottestMusic {
+    position: relative;
+    min-height: 13.3vw;
+}
+.hottestMusic > p{
+    text-align: center;
+}
+.hottestMusic > ol{
+    padding-left: calc(2.2vw + 2px);
+}
+.hottestMusic > ol> li{
+    padding: 1.8vw 0;
+    position: relative;
+    display: flex;
+}
+.hottestMusic > ol> li .rank{
+    font-size: 17px;
+    color: #999;
+    align-items: center;
+    display: flex;
+    width: 7.5vw;
+    align-items: center;
+}
+.hottestMusic > ol> li .rank .top{
+    color: #DF3436;
+}
+.hottestMusic > ol> li a{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid #E2E2E3;
+    width: -webkit-fill-available;
+}
+.hottestMusic > ol> li h3{
+    font-size: 4.5vw;
+}
+.hottestMusic > ol> li p{
+    font-size: 3.2vw;
+    color: #888;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1px;
+}
+.hottestMusic > ol> li svg.play{
+    height: 5.9vw;
+    width: 5.9vw;
+    position: absolute;
+    right: 3vw;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #AAA;
+}
+.hottestMusic > ol> li svg.sq{
+    width: 3.6vw;
+    height: 3.6vw;
+    margin-right: 0.3em;
+    fill: #FE672E;
+}
+.hottestMusic .showAll{
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    justify-content: center;
+    color: #999;
+    padding: 4.2vw 6vw 6vw 6vw;
+}
