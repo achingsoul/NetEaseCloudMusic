@@ -170,8 +170,8 @@
                 </div>
             </section>
         </li>
+        <!--热歌榜-->
         <li>
-            <!--热歌榜-->
             <section class="hotlist">
                 <div class="hotlistWrapper">
                     <div class="hotlistBanner">
@@ -189,13 +189,60 @@
                 <a class="showAll" href="#">查看完整榜单 ></a>
             </section>
         </li>
+        <!--搜索-->
         <li>
-            <input id="searchSong" type="text" style="border: 1px solid red;">
-            <div id="output"></div>
+            <section class="search">
+                <!--搜索输入框-->
+                <form class="searchForm" action="">
+                    <div class="inputContainer">
+                        <div class="iconSearch">
+                            <svg class="icon icon-search">
+                                <use xlink:href="#icon-search"></use>
+                            </svg>
+                        </div>
+                        <input type="text" placeholder="搜索歌曲、歌手、专辑" autocomplete="off">
+                        <figure class="inputClose">
+                            <svg class="icon icon-close">
+                                <use xlink:href="#icon-close"></use>
+                            </svg>
+                        </figure>
+                    </div>
+                </form>
+                <!--热门搜索-->
+                <div class="searchDefault active">
+                    <section class="hotSearch">
+                        <h3>热门搜索</h3>
+                        <ul>
+                            <li>神经病之歌</li>
+                            <li>知音难觅</li>
+                            <li>别找我麻烦</li>
+                            <li>斯德哥尔摩情人</li>
+                            <li>I Am Me Once More</li>
+                            <li>全世界谁倾听你</li>
+                            <li>Mad World</li>
+                            <li>你瞒我瞒</li>
+                        </ul>
+                    </section>
+                    <section class="searchHistory">
+                        <ul class="searchList">
+
+                        </ul>
+                    </section>
+                </div>
+                <!--搜索结果-->
+                <div class="searchResult">
+                    <ol class="resultList">
+                        
+                    </ol>
+                </div>
+                <p id="resultLoading">
+                    <img src="./images/loading.gif" alt="">
+                </p>
+            </section>
         </li>
     </ol>
 
-    <script src="//at.alicdn.com/t/font_341680_n48k2uawc73c8fr.js"></script>
+    <script src="//at.alicdn.com/t/font_341680_sowv60j4pkb21emi.js"></script>
     <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="./index.js"></script>
 </body>

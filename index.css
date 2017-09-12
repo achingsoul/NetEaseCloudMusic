@@ -283,3 +283,18 @@ section.hotlist .dimmer{
     color: #999;
     padding: 4.2vw 6vw 6vw 6vw;
 }
+
+.search{}
+.search form{}
+.search form .inputContainer{}
+.search form .iconSearch{}
+.search form .iconSearch svg{}
+.search form input{}
+.search form .inputClose{}
+.search form .inputClose svg{}
+
+.search .searchDefault.active{}
+.search .searchDefault .hotSearch{}
+.search .searchDefault .hotSearch h3{}
+.search .searchDefault .hotSearch ul{}
+.search .searchDefault .hotSearch ul li{}
