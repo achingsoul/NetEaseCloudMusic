@@ -284,13 +284,43 @@ section.hotlist .dimmer{
     padding: 4.2vw 6vw 6vw 6vw;
 }
 
-.search{}
-.search form{}
-.search form .inputContainer{}
-.search form .iconSearch{}
-.search form .iconSearch svg{}
-.search form input{}
-.search form .inputClose{}
+.search{
+    display: block;
+}
+.search form{
+    padding: 4vw 2.667vw;
+    border-bottom: 1px solid #F0F1F2;
+}
+.search form .inputContainer{
+    display: flex;
+    width: 100%;
+    background: #EBECEC;
+    border-radius: 8vw;
+    justify-content: center;
+}
+.search form .iconSearch{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search form .iconSearch svg{
+    display: flex;
+}
+.search form input{
+    border: none;
+    width: 80%;
+    height: 8vw;
+    background: transparent;
+    font-size: 14px;
+    line-height: 4.8vw;
+}
+.search form .inputClose{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .search form .inputClose svg{}
 
 .search .searchDefault.active{}
@@ -298,3 +328,13 @@ section.hotlist .dimmer{
 .search .searchDefault .hotSearch h3{}
 .search .searchDefault .hotSearch ul{}
 .search .searchDefault .hotSearch ul li{}
+
+.search .searchHistory ul li{}
+.search .searchHistory ul li svg{}
+.search .searchList li p{}
+
+.search .searchHistory .historyClose{}
+.search .searchHistory .historyClose svg{}
+
+.search .searchResult{}
+#resultLoading{}
