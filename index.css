@@ -288,24 +288,31 @@ section.hotlist .dimmer{
     display: block;
 }
 .search form{
-    padding: 4vw 2.667vw;
+    padding: 3.8vw 2.667vw;
     border-bottom: 1px solid #F0F1F2;
 }
 .search form .inputContainer{
     display: flex;
     width: 100%;
+    max-height: 8vw;
     background: #EBECEC;
     border-radius: 8vw;
     justify-content: center;
+    position: relative;
 }
 .search form .iconSearch{
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 13px;
+    height: 13px;
+    margin: 0 6px;
 }
 .search form .iconSearch svg{
-    display: flex;
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    fill: #c9c9c9;
 }
 .search form input{
     border: none;
@@ -314,6 +321,14 @@ section.hotlist .dimmer{
     background: transparent;
     font-size: 14px;
     line-height: 4.8vw;
+}
+.search form .holder{
+    color: #c9c9c9;
+    position: absolute;
+    font-size: 14px;
+    left: 30px;
+    top: 5px;
+    background: transparent;
 }
 .search form .inputClose{
     width: 10%;
