@@ -316,11 +316,13 @@ section.hotlist .dimmer{
 }
 .search form input{
     border: none;
-    width: 80%;
+    width: 85%;
     height: 8vw;
     background: transparent;
     font-size: 14px;
     line-height: 4.8vw;
+    outline: none;
+    border: none;
 }
 .search form .holder{
     color: #c9c9c9;
@@ -331,25 +333,80 @@ section.hotlist .dimmer{
     background: transparent;
 }
 .search form .inputClose{
-    width: 10%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 0;
+    text-align: center;
+    align-items: center;
+}
+.search form .inputClose svg{
+    fill: #BCBDBD;
+}
+
+.search .searchDefault.active{
+    display: block;
+}
+.search .searchDefault .hotSearch{
+    padding: 10px 10px 0 10px;
+}
+.search .searchDefault .hotSearch h3{
+    font-size: 12px;
+    color: #666;
+}
+.search .searchDefault .hotSearch ul{
+    margin: 10px 0;
+}
+.search .searchDefault .hotSearch ul li{
+    border: 1px solid #d3d4da;
+    line-height: 32px;
+    height: 32px;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 32px;
+    padding: 0 1em;
+    margin: 0 6px 8px 0;
+}
+
+.search .searchHistory ul li{
+    position: relative;
+}
+.search .searchHistory ul li svg{
+    fill: #bbb;
+    height: 18px;
+    width: 18px;
+}
+.search .searchList li p{
+    margin-left: 6px;
+    border-bottom: 1px solid #F0F1F2;
+    flex: 1;
+    height: 100%;
+    line-height: 1;
+    align-items: center;
+    flex: 1;
+}
+
+.search .searchHistory .historyClose{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 13.33vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.search form .inputClose svg{}
-
-.search .searchDefault.active{}
-.search .searchDefault .hotSearch{}
-.search .searchDefault .hotSearch h3{}
-.search .searchDefault .hotSearch ul{}
-.search .searchDefault .hotSearch ul li{}
-
-.search .searchHistory ul li{}
-.search .searchHistory ul li svg{}
-.search .searchList li p{}
-
-.search .searchHistory .historyClose{}
-.search .searchHistory .historyClose svg{}
+.search .searchHistory .historyClose svg{
+    height: 18px;
+    width: 18px;
+    fill: #999;
+}
 
 .search .searchResult{}
-#resultLoading{}
+.search > p{
+    text-align: center;
+    position: relative;
+    display: none;
+}
