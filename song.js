@@ -3,20 +3,33 @@ $(function () {
     let id = parseInt(location.search.match(/\bid=([^&]*)/)[1], 10)
 
     // 歌曲切换
-    $.get('./songs.json').then(function (response) {
+    $.get('./song_list.json').then(function (response) {
         let songs = response
         let song = songs.filter((s) => s.id === id)[0]
-        let { url, name, lyric } = song
+        let { url, coverUrl, coverBlurUrl, name, singer, lyric } = song
 
         initPlayer.call(undefined, url)
-        initText(name, lyric)
+        initText(name, singer, lyric)
+        initPicture(coverUrl, coverBlurUrl)
     })
 
-    function initText(name, lyric) {
-        $('.song-description > h1').text(name)
+    // 歌曲背景&专辑封面
+    function initPicture(coverUrl, coverBlurUrl) {
+        $('.page').css("background", `url(${coverBlurUrl})`)
+        $('.page').css("background-size", `cover`)
+        $('.page').css("background-position", `center`)
+        $('.cover').find('img').attr("src", coverUrl)
+    }
+
+    // 歌名歌手歌词
+    function initText(name, singer, lyric) {
+        $('.song-description .song-name').text(name)
+        $('.song-description .song-gap').text("-")
+        $('.song-description .singer').text(singer)
         parseLyric(lyric)
     }
 
+    // 播放器
     function initPlayer(url) {
         let audio = document.createElement('audio')
         audio.src = url
@@ -42,16 +55,16 @@ $(function () {
             for (let i = 0; i < $lines.length; i++) {
                 let currentLineTime = $lines.eq(i).attr('data-time')
                 let nextLineTime = $lines.eq(i + 1).attr('data-time')
-                if ( $lines.eq(i+1).length !== 0 && currentLineTime < time && nextLineTime > time) {
+                if ($lines.eq(i + 1).length !== 0 && currentLineTime < time && nextLineTime > time) {
                     $whichLine = $lines.eq(i)
                     break
                 }
             }
-            if($whichLine){
+            if ($whichLine) {
                 $whichLine.addClass('active').prev().removeClass('active')
                 let top = $whichLine.offset().top
                 let linesTop = $('.lines').offset().top
-                let delta = top - linesTop - $('.lyric').height()/3
+                let delta = top - linesTop - $('.lyric').height() / 3
                 $('.lines').css('transform', `translateY(-${delta}px)`)
             }
         }, 200)

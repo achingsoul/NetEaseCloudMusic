@@ -20,7 +20,6 @@ $(function () {
             $('#latestMusic').append($li)
         })
         $('#latestMusicLoading').remove()
-    }, function () {
     })
 
     $.get('./hotsongs.json').then(function (response) {
