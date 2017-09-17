@@ -91,7 +91,11 @@ html,body{
     width: 50vw;
     height: 50vw;
     position: absolute;
-    
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; 
     animation: circle 18s infinite linear;
     animation-play-state: paused;
     /*left: 50%;
