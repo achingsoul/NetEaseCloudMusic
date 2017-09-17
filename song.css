@@ -18,7 +18,7 @@ html,body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: transparent url(http://p3.music.126.net/wbOIJb74smEG5SStLfUvmQ==/18271684230939848.jpg) no-repeat center;
+    
     background-position: 50%;
     background-size: cover;
     opacity: 1;
