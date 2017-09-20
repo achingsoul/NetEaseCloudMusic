@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <div class="page-tabs">
+    <div class="sticky">
     <header class="topbar">
         <svg class="topsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 50" data-reactid="6">
             <g fill="#fff" data-reactid="7">
@@ -63,6 +65,7 @@
             <li><span>搜索</span></li>
         </ol>
     </nav>
+    </div>
     <ol class="tabContent">
         <!--推荐音乐-->
         <li class="active">
@@ -200,7 +203,7 @@
                                 <use xlink:href="#icon-search"></use>
                             </svg>
                         </div>
-                        <input type="search" name="search" placeholder value autocomplete="off">
+                        <input id="searchSong" type="search" name="search" placeholder value autocomplete="off">
                         <label class="holder">搜索歌曲、歌手、专辑</label>
                         <figure class="inputClose">
                             <svg class="icon icon-close">
@@ -209,6 +212,44 @@
                         </figure>
                     </div>
                 </form>
+                <!--搜索建议-->
+                <div class="searchRecom">
+                    <div class="sr-input-btn">搜索“123”</div>
+                    <ul class="searchList">
+                        <!-- <li class="recom-item item">
+                            <figure>
+                                <svg class="icon search2">
+                                    <use xlink:href="#icon-search2"></use>
+                                </svg>
+                            </figure>
+                            <p>123</p>
+                        </li>
+                        <li class="recom-item item">
+                            <figure>
+                                <svg class="icon search2">
+                                    <use xlink:href="#icon-search2"></use>
+                                </svg>
+                            </figure>
+                            <p>123</p>
+                        </li>
+                        <li class="recom-item item">
+                            <figure>
+                                <svg class="icon search2">
+                                    <use xlink:href="#icon-search2"></use>
+                                </svg>
+                            </figure>
+                            <p>123</p>
+                        </li>
+                        <li class="recom-item item">
+                            <figure>
+                                <svg class="icon search2">
+                                    <use xlink:href="#icon-search2"></use>
+                                </svg>
+                            </figure>
+                            <p>123</p>
+                        </li> -->
+                    </ul>
+                </div>
                 <!--热门搜索-->
                 <div class="searchDefault active">
                     <section class="hotSearch">
@@ -242,6 +283,7 @@
             </section>
         </li>
     </ol>
+    </div>
 
     <script src="//at.alicdn.com/t/font_341680_sowv60j4pkb21emi.js"></script>
     <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
