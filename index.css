@@ -10,6 +10,26 @@ body{
     font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
 
+ ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #ccc;
+}
+
+ :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+}
+
+ ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ccc;
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #ccc;
+}
+
 section > h2:first-child{
     font-size: 4.5vw;
     border-left: 2px solid #D33A31;
@@ -334,7 +354,7 @@ section.hotlist .dimmer{
 .search form .inputContainer{
     display: flex;
     width: 100%;
-    max-height: 8vw;
+    height: 30px;
     background: #EBECEC;
     border-radius: 8vw;
     justify-content: center;
@@ -343,34 +363,30 @@ section.hotlist .dimmer{
 .search form .iconSearch{
     position: absolute;
     left: 0;
-    top: 6px;
-    width: 13px;
-    height: 13px;
-    margin: 0 6px;
+    top: 0;
+    margin: 6px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .search form .iconSearch svg{
-    position: absolute;
     width: 5vw;
     height: 5vw;
     fill: #c9c9c9;
 }
 .search form input{
-    border: none;
     width: 85%;
     height: 8vw;
-    background: transparent;
-    font-size: 14px;
-    line-height: 4.8vw;
+    background: transparent;;
     outline: none;
     border: none;
-}
-.search form .holder{
-    color: #c9c9c9;
     position: absolute;
     font-size: 14px;
     left: 30px;
-    top: 5px;
-    background: transparent;
+    top: 1px;
+}
+.search form .holder{
+    
 }
 .search form .inputClose{
     width: 30px;

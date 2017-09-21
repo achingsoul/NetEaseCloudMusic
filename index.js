@@ -1,7 +1,7 @@
 $(function () {
 
     
-
+    // 最新音乐
     $.get('./songs.json').then(function (response) {
         let items = response
         items.forEach((i) => {
@@ -25,6 +25,7 @@ $(function () {
         $('#latestMusicLoading').remove()
     })
 
+    // 热门榜
     $.get('./hotsongs.json').then(function (response) {
         let items = response
         items.forEach((i) => {
@@ -47,9 +48,7 @@ $(function () {
         $('#hottestMusicLoading').remove()
     })
 
-    
-
-
+    // tab切换
     $('.siteNav').on('click', 'ol.tabItems>li', function (e) {
         let $li = $(e.currentTarget).addClass('active')
         $li.siblings().removeClass('active')
@@ -86,9 +85,14 @@ $(function () {
             search(value).then((result) => {
                 timer = undefined
                 if (result.length !== 0) {
-                    $('#output').text(result.map((r => r.name)).join(','))
+                    let $ol = $('<ol></ol>')
+                    result.forEach((item) => {
+                        let $li = $(`
+                            <li class="item"> <figure> <svg class="icon"> <use xlink:href="#icon-clock"></use> </svg> </figure> <p>${item.id}</p> <figure class="historyClose"> <svg class="icon"> <use xlink:href="#icon-close1"></use> </svg> </figure> </li>
+                        `)
+                    }) 
                 } else {
-                    $('#output').text('没有结果')
+                    $('.searchResult').text('没有结果')
                 }
             })
         }, 300) // 设置定时器 等待用户输入
