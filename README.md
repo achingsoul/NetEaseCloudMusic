@@ -4,7 +4,7 @@
 
 # 预览
 
-地址：https://achingsoul.github.io/NetEaseCloudMusic/（请用chrome手机模式预览）
+地址：https://achingsoul.github.io/NetEaseCloudMusic/ （请用chrome手机模式预览）
 
 ### 移动端扫描下方二维码：
 
