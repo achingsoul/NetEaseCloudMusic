@@ -39,11 +39,9 @@ section > h2:first-child{
     padding-left: 2.2vw;
 }
 
-.page-tabs{
-    
-}
+/* 固定 topbar & siteNav */
 .sticky{
-        position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -51,6 +49,7 @@ section > h2:first-child{
     background: white;
 }
 
+/* topbar */
 .topbar{
     background: #D43C33;
     padding: 4.5vw 2.5vw;
@@ -72,6 +71,7 @@ section > h2:first-child{
     padding: 0 10px;
 }
 
+/* siteNav */
 .siteNav{}
 .siteNav > ol{
     display: flex;
@@ -100,6 +100,7 @@ section > h2:first-child{
     border-top: 2px solid #D33A31;
 }
 
+/* tabContent */
 .tabContent{
     margin-top: 105px;
 }
@@ -110,6 +111,7 @@ section > h2:first-child{
     display: block;
 }
 
+/* 推荐歌单 */
 .playlists{
     margin-top: 5.2vw;
     padding-bottom: 6.2vw;
@@ -163,6 +165,7 @@ section > h2:first-child{
     z-index: 2;
 }
 
+/* 最新音乐 */
 .latestMusic{}
 .latestMusic > p{
     text-align: center;
@@ -205,6 +208,7 @@ section > h2:first-child{
     fill: #FE672E;
 }
 
+/* 广告logo */
 section.art{
     background: transparent url(http://s3.music.126.net/m/s/img/recommand_bg_2x.png?d045fafc60e017b653f8065a87496922) no-repeat center 0;
     background-size: contain;
@@ -239,6 +243,7 @@ section.art .copyright{
     color: #888;
 }
 
+/* 热歌榜 */
 section.hotlist{
     position: relative;
 }
@@ -277,6 +282,7 @@ section.hotlist .dimmer{
     left: 0;
 }
 
+/* 热歌榜歌单 */
 .hottestMusic {
     position: relative;
     min-height: 13.3vw;
@@ -344,9 +350,11 @@ section.hotlist .dimmer{
     padding: 4.2vw 6vw 6vw 6vw;
 }
 
+/* 搜索 */
 .search{
     display: block;
 }
+/* 搜索输入框 */
 .search form{
     padding: 3.8vw 2.667vw;
     border-bottom: 1px solid #F0F1F2;
@@ -409,29 +417,7 @@ section.hotlist .dimmer{
     fill: #BCBDBD;
 }
 
-.searchList .item{
-    height: 45px;
-            display: flex;
-            align-items: center;
-            margin-left: 10px;
-}
-.searchList .item figure > svg{
-    margin-top: 4px;
-                    fill: #999;
-                    width: 20px;
-                    height: 20px;
-}
-.searchList .item p{
-    margin-left: 6px;
-                border-bottom: 1px solid #F0F1F2;
-                flex: 1;
-                height: 100%;
-                line-height: 1;
-                display: flex;
-                align-items: center;
-}
-
-
+/* 搜索建议 */
 .search .searchRecom{
     display: none;
 }
@@ -440,22 +426,19 @@ section.hotlist .dimmer{
 }
 .search .searchRecom .sr-input-btn{
     height: 50px;
-            margin-left: 2.67vw;
-            padding-right: 2.67vw;
-            display: flex;
-            align-items: center;
-            color: #507daf;
-            border-bottom: 1px solid #F0F1F2;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            word-break: normal;
-}
-.search .searchRecom ul{
-
+    margin-left: 2.67vw;
+    padding-right: 2.67vw;
+    display: flex;
+    align-items: center;
+    color: #507daf;
+    border-bottom: 1px solid #F0F1F2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
 }
 
-
+/* 热门搜索 */
 .search .searchDefault{
     display: none;
 }
@@ -483,13 +466,19 @@ section.hotlist .dimmer{
     margin: 0 6px 8px 0;
 }
 
+/* 搜索历史 */
 .search .searchHistory ul li{
     position: relative;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
 }
 .search .searchHistory ul li svg{
     fill: #bbb;
     height: 18px;
     width: 18px;
+    margin-top: 4px;
 }
 .search .searchList li p{
     margin-left: 6px;
@@ -499,8 +488,8 @@ section.hotlist .dimmer{
     line-height: 1;
     align-items: center;
     flex: 1;
+    display: flex;
 }
-
 .search .searchHistory .historyClose{
     position: absolute;
     top: 0;
@@ -517,6 +506,7 @@ section.hotlist .dimmer{
     fill: #999;
 }
 
+/* 搜索结果 */
 .search .searchResult{
     display: none;
 }
